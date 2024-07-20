@@ -1,3 +1,15 @@
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: #030100;
+  color: #fff;
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+
+.App {
+  overflow-x: hidden;
+}
+
 button {
   color: #000;
   background-color: #f68537;
@@ -102,6 +114,9 @@ header {
   margin-top: 2rem;
   font-weight: 600;
 }
+.header-left p {
+  line-height: 1.6;
+}
 .header-right {
   position: relative;
 }
@@ -124,7 +139,7 @@ header {
 }
 .hero-right h2 {
   font-size: 3rem;
-  text-align: left;
+  /* text-align: left; */
 }
 .hero-btn {
   color: #000;
@@ -161,10 +176,10 @@ header {
   background-image: linear-gradient(to bottom right, #545454, #111111);
 }
 .s-box:hover {
-  transform: rotate(2deg);
   transition: 1s;
-  background: #4a2f1d;
+  box-shadow: 0px 0px 12px 10px #000;
   cursor: pointer;
+  transform: scale(1.03);
 }
 .s-box:nth-child(5) {
   margin-right: -25rem;
@@ -215,6 +230,68 @@ header {
   text-align: center;
   font-size: 2.3rem;
   margin: 4rem 0;
+}
+/* EXPERIECEN============== */
+.exp-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  place-items: center;
+  gap: 2rem;
+  padding: 2rem 4rem;
+}
+.exp-all {
+  position: relative;
+}
+.exp-blur {
+  background-color: #4a2f1d;
+  height: 20rem;
+  width: 17rem;
+  position: absolute;
+  border-radius: 100px;
+  filter: blur(100px);
+
+  transform: translate(10%, -100%);
+  right: 0;
+  z-index: -1;
+}
+.exp-blur-left {
+  background-color: #4a2f1d;
+  height: 20rem;
+  width: 17rem;
+  position: absolute;
+  border-radius: 100px;
+  filter: blur(100px);
+
+  transform: translate(-20%, -10%);
+  left: 0;
+  z-index: -1;
+}
+.exp-box {
+  border: 1px solid #edcdb7;
+  padding: 2rem;
+  border-radius: 20px;
+  background-image: linear-gradient(to bottom right, #545454, #111111);
+  height: 15rem;
+}
+.exp-box p {
+  line-height: 1.6;
+}
+.exp-box img {
+  height: 3rem;
+  width: 3rem;
+  float: right;
+}
+.exp h2 {
+  font-size: 2.3rem;
+  text-align: center;
+}
+.exp {
+  padding: 4rem 0;
+}
+.exp-box h4 {
+  font-size: 1.5rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
 }
 /* Footer */
 footer {

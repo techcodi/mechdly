@@ -18,7 +18,7 @@
     font-size: 2rem;
   }
   .services h3 {
-    font-size: 1.5rem;
+    font-size: 1.9rem;
   }
   .s-box h4 {
     font-size: 1.4rem;
@@ -39,9 +39,38 @@
     height: 20rem;
     width: 20rem;
   }
+  .h-container {
+    padding-bottom: 1rem;
+  }
+  .s-container {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 460px) {
+  .exp-container {
+    padding: 2rem;
+  }
+  .hero-right {
+    padding: 1rem 0px;
+  }
+  .services h3 {
+    margin: 2rem 0;
+  }
+  .m-left h2 {
+    font-size: 2rem;
+  }
+  header {
+    margin-bottom: 1rem;
+  }
 }
 
 @media screen and (max-width: 600px) {
+  body {
+    overflow-x: hidden;
+  }
+  .img {
+    width: 5rem;
+  }
   .nav-btns {
     display: none;
   }
@@ -66,7 +95,16 @@
   }
   .blur {
     top: 20rem;
-    transform: translate(10%, -40%);
+    transform: translate(-100%, 10%);
+  }
+  .exp h2 {
+    font-size: 1.8rem;
+  }
+  .exp h2 br {
+    display: none;
+  }
+  .exp-blur {
+    display: none;
   }
 }
 
@@ -86,8 +124,13 @@
     align-items: center;
   }
   .header-right img {
-    width: 80%;
-    height: 80%;
+    width: 100%;
+    height: 100%;
+
+    text-align: center;
+  }
+  .blur-header {
+    transform: translate(-130%, 10%);
   }
   .header-left h1 {
     font-size: 2.5rem;
@@ -99,6 +142,9 @@
   }
   .header-left h1 br {
     display: none;
+  }
+  .m-right .blur-header {
+    transform: translate(-130%, -30%);
   }
 
   .hero-container {
